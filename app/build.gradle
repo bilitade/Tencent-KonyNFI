@@ -1,0 +1,74 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id 'org.jetbrains.kotlin.android' version '1.8.0' // Consider 1.9+ if using JDK 17+
+    id 'org.jetbrains.kotlin.kapt' version '1.8.0'
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
+
+android {
+    namespace 'com.coopbank.androidtencentnfi'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.coopbank.androidtencentnfi"
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+    packagingOptions {
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+        pickFirst 'lib/armeabi/libc++_shared.so'
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+        pickFirst 'lib/arm64-v8a/libmarsxlog.so'
+        pickFirst 'lib/armeabi/libmarsxlog.so'
+        pickFirst 'lib/armeabi-v7a/libmarsxlog.so'
+        pickFirst 'lib/arm64-v8a/libv8jni.so'
+    }
+}
+
+dependencies {
+    // Local jar
+    implementation files("libs/konywidgets.jar")
+
+    // AndroidX and Material
+    implementation libs.appcompat
+    implementation libs.material
+
+    // Unit & UI testing
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    // Networking & JSON
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.13'
+
+    // Tencent Mini App SDK
+    kapt 'com.tencent.tcmpp.android:mini_annotation_processor:1.5.3'
+    implementation 'com.tencent.tcmpp.android:mini_core:2.2.7'
+}

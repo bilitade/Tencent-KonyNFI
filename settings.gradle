@@ -1,0 +1,31 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+        // Tencent Maven repository for plugins
+        maven {
+            url 'https://tcmpp-work-maven.pkg.coding.net/repository/tcmpp/android'
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // Tencent Maven repository for dependencies
+        maven {
+            url 'https://tcmpp-work-maven.pkg.coding.net/repository/tcmpp/android'
+        }
+    }
+}
+
+rootProject.name = "androidTencentNFI"
+include ':app'

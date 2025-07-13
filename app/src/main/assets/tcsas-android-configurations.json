@@ -1,0 +1,17 @@
+{
+  "customId": "T17809SZ7231745PGQM",
+  "productId": "100185863",
+  "packageName": "com.coopbank.androidtencentnfi",
+  "bundleId": "",
+  "material": "01gG+8iC/NWU4RKA+zIBIv1bmIQHmMQaP85HttDAOcM6zU60GzTgshBAYTOVTbaxFgyxZRbjHD3bZfnYvslUafsiT883qjvnBu09iqKHtLGU+Gg4txZG3f0sQXRYD4Q9zTAeuV/dEbpUQtYIUSdegQ4K0AxU297KAh4NcrwVDsW37rSsxagKV4c1vOIcgStXBDDBBtXbGfcNVGA+6nY9pDZ7SQ890LOggvp4GABVbOfu05K7nmlowbuTR5WHISOhccfSl9ifZ/hqsTQdn4PLbyLQzf/KoTA4NxmjxD3wBUIPu7Vp1cQNl9yZz9yrN47lNJ7WffLkzAAu2LfI5Gh7OTTM4aBmie0nzqGR6t9tlyqdgzuD232eTHolk5IJk4ncRbWtQIRwXcbcYTM1BUjHX45M7pbMnf8BQ56BLDRBpwL8msNvLTG8xhxqD556Sd6ouvetrk2CLwgzvEurLJId1fkb1LrxoGPS+awbXcEhah3yEyPTVQW2I6bE2EhIzhcZeVD0D3O6RoEn0LZXLJ3yZICOAYTQaW6J2o0bIICcXeCP8hwW9VwW+hfgxJf8mmaZHLXw/TYMz7delN4TOFvZw9tg==bf31b07e99c68a61",
+  "shark": {
+    "httpUrl": "https://api-fk.tcmpp.com/",
+    "tcpHost": "MAZUTCPDOMAN",
+    "tcpPort": 0,
+    "appKey": "app-v6sn3tmotf",
+    "symEnc": 1,
+    "asymEnc": 0
+  },
+  "feedback": "https://feedback-fk.tcmpp.com?region=eu-frankfurt&env=prod",
+  "qapmUrl": ""
+}
