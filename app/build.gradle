@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.android.application)
-//    id'com.android.library'
+//    alias(libs.plugins.android.application)
+    id'com.android.library'
     id 'org.jetbrains.kotlin.android' version '2.2.0'
     id 'org.jetbrains.kotlin.kapt' version '2.2.0'
 }
@@ -16,8 +16,8 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.coopbank.androidtencentnfi"
-        minSdk 24
+//        applicationId "com.coopbank.androidtencentnfi"
+        minSdk 21
         //noinspection OldTargetApi
         targetSdk 33
         versionCode 1
