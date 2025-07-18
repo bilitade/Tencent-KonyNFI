@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
         Button openSpecificAppButton = new Button(this);
         openSpecificAppButton.setText("Open Specific Mini App");
         openSpecificAppButton.setOnClickListener(v -> {
-            String specificAppId = "mpj7a7wmzyrkjxa5";
+            String specificAppId = "mphquix9o6f3m7qa";
             TmfMiniSDK.startMiniApp(MainActivity.this, specificAppId, new MiniStartOptions());
         });
 
