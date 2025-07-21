@@ -70,4 +70,19 @@ dependencies {
     // Tencent Mini App SDK
     kapt 'com.tencent.tcmpp.android:mini_annotation_processor:1.5.3'
     implementation 'com.tencent.tcmpp.android:mini_core:2.2.7'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'com.tencent.tcmpp.android:mini_extra_qrcode:1.5.6'
+    implementation 'com.tencent.tcmpp.android:mini_extra_lbs:1.5.5'
+    implementation 'com.tencent.tcmpp.android:mini_extra_nfc:1.5.4'
+    implementation 'com.tencent.tcmpp.android:mini_extra_soter:1.5.4'
+    implementation 'com.tencent.tcmpp.android:mini_extra_clipboard:1.5.5'
+    implementation 'com.tencent.tcmpp.android:mini_extra_contact:1.5.3'
+    implementation 'com.tencent.tcmpp.android:mini_extra_pdf:1.5.2'
+    implementation 'com.tencent.tcmpp.android:mini_extra_media_support_lite:2.0.1'
+    implementation 'com.tencent.tcmpp.android:mini_extra_trtc_live:1.5.4'
+    implementation 'com.tencent.tcmpp.android:mini_extra_calendar:1.5.3'
+    implementation 'com.tencent.tcmpp.android:mini_extra_map:1.5.4'
+
+
+
 }
